@@ -1,0 +1,144 @@
+button {
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  border: none;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  padding: 2px;
+  width: 100px;
+  height: 35px;
+  background-color: rgb(56, 134, 236);
+  
+}
+
+.btn-primary {
+  background-color: rgb(56, 134, 236);
+  &:hover {
+    background-color: rgb(27, 106, 209);
+  }
+}
+
+.btn-success {
+  background-color: rgb(13, 163, 13);
+  &:hover {
+    background-color: rgb(10, 148, 10);
+  }
+}
+
+.btn-danger {
+  background-color: rgb(243, 44, 44);
+  &:hover {
+    background-color: rgb(219, 38, 38);
+  }
+}
+
+.btn-secondary {
+  background-color: rgb(148, 147, 147);
+  &:hover {
+    background-color: rgb(119, 114, 114);
+  }
+}
+
+.btn-warning {
+  background-color: rgb(235, 190, 68);
+  &:hover {
+    background-color: rgb(211, 170, 58);
+  }
+  color: rgb(5, 5, 5);
+}
+
+.btn-sm {
+  width: 70px;
+  height: 30px;
+  font-size: 10px;
+}
+
+.btn-md {
+  width: 100px;
+  height: 35px;
+}
+
+.btn-lg {
+  width: 130px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.btn-round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.btn-question {
+  border-radius: 50%;
+  background-image: url("../../assets/icons/question-solid.svg");
+  background-position: center;
+  padding: 10px;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: solid 2px rgb(77, 175, 240);
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease;
+  &-lg {
+    @extend .btn-question;
+    width: 60px;
+    height: 60px;
+  }
+  &-sm {
+    @extend .btn-question;
+    width: 30px;
+    height: 30px;
+  }
+  &:hover {
+    background-color: rgb(115, 191, 241);
+  }
+}
+
+.btn-exclamation {
+  border-radius: 50%;
+  background-image: url("../../assets/icons/exclamation-solid.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 10px;
+  background-origin: content-box;
+  border: solid 2px rgb(201, 47, 47);
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease;
+  padding: 3px;
+  &-lg {
+    @extend .btn-exclamation;
+    width: 60px;
+    height: 60px;
+  }
+  &-sm {
+    @extend .btn-exclamation;
+    width: 30px;
+    height: 30px;
+  }
+  &:hover {
+    background-color: rgb(241, 70, 70);
+  }
+}
+
+.btn-outline {
+  outline: 2px solid rgb(192, 128, 8);
+  color: rgb(8, 8, 8);
+  transition: all 0.5s ease;
+  background-color: transparent;
+  &:hover {
+    background-color: rgb(230, 163, 39);
+    color: #ffff;
+  }
+}
+
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+} 
